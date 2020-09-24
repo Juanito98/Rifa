@@ -90,6 +90,7 @@ public class RifaUI extends JFrame {
         System.out.println("Hidding... " + (j+1));
         JOptionPane.showMessageDialog(this, String.format("Te tocó el número %d", j+1), "Resultado", JOptionPane.PLAIN_MESSAGE);
         labels[j].setVisible(false);
+        usedNumbers[j] = true;
         
         RifaManager.appendIntoFile(j+1);
     }
